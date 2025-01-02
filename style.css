@@ -1,8 +1,97 @@
 body {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 canvas {
-    display: block;
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu a:hover {
+  background-color: #ccc;
+}
+
+.menu a.active {
+  background-color: #ff0000cc;
+  color: white;
+  cursor: pointer;
+}
+
+#start {
+  cursor: pointer;
+}
+
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ff0000;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 60px;
+  display: none;
+  z-index: 200;
+}
+
+#gameOver button {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 1px;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #000000;
+}
+
+#scoreDisplay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ff0000cc;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 30px;
+  z-index: 150;
+}
+
+#ammoDisplay {
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  color: #ffffffcc;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 15px;
+  z-index: 150;
+}
+
+#staminaContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 500px;
+  height: 5px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  z-index: 150;
+}
+
+#staminaBar {
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000cc
 }
