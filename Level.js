@@ -18,7 +18,9 @@ class Level {
     floor(x, z, size) {
         var floor = new THREE.Mesh(
             new THREE.PlaneGeometry(size, size), 
-            new THREE.MeshStandardMaterial({ color: 0x808080 }))
+            new THREE.MeshStandardMaterial({ 
+                color: 0x808080 
+            }))
         floor.rotation.x = -Math.PI / 2
         floor.position.set(x, 0, z)
         floor.receiveShadow = true
