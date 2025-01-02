@@ -1,5 +1,5 @@
 import { Scene } from './Scene.js'
-import { Level } from './level.js'
+import { Level } from './Level.js'
 
 import { Weapon } from './Weapon.js'
 import { Torch } from './Torch.js'
