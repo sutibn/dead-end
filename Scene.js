@@ -2,7 +2,7 @@ class Scene {
     constructor() {
         this.scene = new THREE.Scene()
         this.scene.background = new THREE.Color(0x71797E)
-        this.scene.fog = new THREE.Fog(0x71797E, 0, 100)
+        this.scene.fog = new THREE.Fog(0x71797E, 0, 1000)
         this.scene.add(new THREE.AmbientLight(0x000000, 0.5))
     }
 
@@ -12,6 +12,10 @@ class Scene {
 
     remove(name) {
         this.scene.remove(name)
+    }
+
+    getScene() {
+        return this.scene
     }
 }
 
