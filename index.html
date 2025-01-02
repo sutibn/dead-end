@@ -2,7 +2,7 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
-        <title> game </title>
+        <title> DEAD END </title>
         <link rel='stylesheet' href='style.css'>
 
         <script src='main.js' type='module' ></script>
@@ -11,5 +11,29 @@
     </head>
 
     <body>
+        <div class='menu' id='menu'>
+            <a class='active' href='https://github.com/sutibn/dead' target='_blank'>
+                <h3> DEAD END </h3> <br>
+                &copy sutibn
+            </a>
+            <a>
+                <div id="start">
+                    <h5> PLAY </h5>
+                </div>
+            </a>
+        </div>
+
+        <div id="scoreDisplay">0</div>
+
+        <div id="ammoDisplay">50</div>
+
+        <div id="staminaContainer">
+            <div id="staminaBar"></div>
+        </div>
+
+        <div id="gameOver">
+            DEAD <br>
+            <button onclick='location.reload()'> RETRY </button>
+        </div>
     </body>
 </html>
